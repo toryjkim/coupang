@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>로그인</title>
-        <link rel="icon" href="images/favicon.png" />
-        <link rel="stylesheet" href="login.css" />
-    </head>
-    <body>
-        <div class="wapper-login">
-            <header class="login-header">
-                <h1 class="login-logo">
-                    <a class="logo-link" href="http://www.coupang.com">
-                        <img src="images/login_logo_color.png" alt="coupang logo" />
-                    </a>
-                </h1>
-            </header>
-            <div class="main">
-                <form id="login-form">
-                    <div class="wrapper-login-input">
-                        <label for="id">
-                            <span class="login-input-left">
-                                <img class="login-letter-logo" src="images/ui/shape=letter.png" alt="letter"/>
-                            </span>
-                        </label>
-                        <input class="login-input-right" type="text" id="id" value="아이디(이메일)"/>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <div class="wapper-login">
+        <header class="login-header">
+            <h1 class="login-logo">
+                <a class="logo-link" href="#">
+                    <img src="images/login_logo_color.png" alt="coupang logo" />
+                </a>
+            </h1>
+        </header>
+        <div class="main">
+            <form id="login-form">
+                <div class="login-wrap input-wrap--error">
+                    <label>
+                        <span class="login-input-left">
+                            <img class="login-letter-logo" src="images/UI/shape=letter.png" alt="id logo"/>
+                        </span>
+                        <input class="login-input-right" type="text" placeholder="아이디(이메일)"/>
+                    </label>
+                    <div class="">
+                        아이디(이메일)을 입력해주세요.
                     </div>
-                    <div class="wrapper-login-input">
-                        <label for="pass">
-                            <span class="login-input-left">
-                            <img class="login-letter-logo" src="images/ui/shape=lock.png" alt="lock"/>
-                            </span>
-                        </label>
-                        <input class="login-input-right" type="text" id="pass" value="비밀번호"/>
+                </div>
+                <div class="login-wrap input-wrap--error">
+                    <label>
+                        <span class="login-input-left">
+                            <img class="login-letter-logo" src="images/UI/shape=lock.png" alt="password logo"/>
+                        </span>
+                        <input class="login-input-right" type="text" placeholder="비밀번호"/>
+                    </label>
+                    <div>
+                        비밀번호를 입력해주세요.
                     </div>
-                    <div class="login-link">
-                        <input type="checkbox"/>
-                        <span>자동로그인</span>
-                        <a class="auto-login" href="https://login.coupang.com/login/accountInfoFind.pang">아이디(이메일)/비밀번호 찾기></a>
-                    </div>
-                </form>
-
-                <div class="login-button">
-                    <input type="button" value = "로그인" form="login-form">
-                 </div>
-     
-                 <hr>
-     
-                 <div class="join-button">
-                     <a href="#">회원가입</a>
-                 </div>
+                </div>
+                <div class="login-link">
+                    <input class="checkbox-input" type="checkbox"/>
+                    <span>자동로그인</span>
+                    <a class="auto-login" href="#">아이디(이메일)/비밀번호 찾기></a>
+                </div>
+            </form>
+            <div>
+                <input type="button" value = "로그인" form="login-form">
+                <hr>
+                <a href="#">회원가입</a>
             </div>
- 
-            <footer id="footerBox">
-                <p>©Coupang Corp. All rights reserved.</p>
-            </footer>
         </div>
-    </body>
+
+        <footer id="footerBox">
+            <div>©Coupang Corp. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
 </html>
