@@ -9,42 +9,48 @@
     <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-    <div class="wapper-login">
-        <header class="login-header">
-            <h1 class="login-logo">
-                <a class="logo-link" href="#">
-                    <img src="images/login_logo_color.png" alt="coupang logo" />
+    <div class="member-wrapper">
+        <header class="member-header">
+            <h1 class="member-logo">
+                <a class="member-logo__link" href="#">
+                    <img src="images/login_logo_color.png" width="100%" height="100%" alt="coupang" class="memeber-logo__img-fixer">
                 </a>
             </h1>
         </header>
-        <div class="main">
-            <form id="login-form">
-                <div class="login-wrap input-wrap--error">
-                    <label>
-                        <span class="login-input-left">
-                            <img class="login-letter-logo" src="images/UI/shape=letter.png" alt="id logo"/>
-                        </span>
-                        <input class="login-input-right" type="text" placeholder="아이디(이메일)"/>
-                    </label>
-                    <div class="">
-                        아이디(이메일)을 입력해주세요.
+        <div class="member-main">
+            <form id="login__form">
+                <div class="login__content">
+                    <div class="member__field-wrapper">
+                        <div class="member__input-field">
+                            <label class="member__lnput-wrap member__input-wrap--error">
+                                <span class="member-sprite">
+                                    <img class="member-sprite__logo" src="images/UI/shape=letter.png" alt="id logo"/>
+                                </span>
+                                <input class="member-input" type="text" placeholder="아이디(이메일)"/>
+                            </label>
+                        </div>
+                        <div class="member__expand-field">
+                            아이디(이메일)을 입력해주세요.
+                        </div>
                     </div>
-                </div>
-                <div class="login-wrap input-wrap--error">
-                    <label>
-                        <span class="login-input-left">
-                            <img class="login-letter-logo" src="images/UI/shape=lock.png" alt="password logo"/>
-                        </span>
-                        <input class="login-input-right" type="text" placeholder="비밀번호"/>
-                    </label>
-                    <div>
-                        비밀번호를 입력해주세요.
+                    <div class="member__field-wrapper">
+                        <div class="member__input-field">
+                            <label class="member__lnput-wrap member__input-wrap--error">
+                                <span class="member-sprite">
+                                    <img class="member-sprite__logo" src="images/UI/shape=lock.png" alt="password logo"/>
+                                </span>
+                                <input class="member-input" type="text" placeholder="비밀번호"/>
+                            </label>
+                        </div>
+                        <div class="member__expand-field">
+                            비밀번호를 입력해주세요.
+                        </div>
                     </div>
-                </div>
-                <div class="login-link">
-                    <input class="checkbox-input" type="checkbox"/>
-                    <span>자동로그인</span>
-                    <a class="auto-login" href="#">아이디(이메일)/비밀번호 찾기></a>
+                    <div class="member__login">
+                        <input class="checkbox-input" type="checkbox"/>
+                        <span>자동로그인</span>
+                        <a class="member-login auto-login" href="#">아이디(이메일)/비밀번호 찾기></a>
+                    </div>
                 </div>
             </form>
             <div>

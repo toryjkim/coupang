@@ -2,11 +2,11 @@ body {
     margin: 0;
 }
 
-.main {
+.member-main {
     margin-top: 50px;
 }
 
-.wapper-login {
+.member-wrapper {
     min-width: 290px;
     max-width: 574px;
     margin: 236px auto;
@@ -14,44 +14,62 @@ body {
 }
 
 @media screen and (max-width: 500px){
-    .wapper-login {
+    .member-wrapper {
         margin: auto;
     }
 }
 
-.login-wrap {
+.member__lnput-wrap {
+    display: block;
     width: 100%;
     margin-top: 20px;
+    border: 1px solid #ccc;
     /* border: 1px solid black; */
 }
 
-.input-wrap--error {
+.member__input-wrap--error {
     border-color: #E52528;
 }
 
-.login-header {
+.member-header {
     margin: auto;
 }
 
-.login-logo {
+.member-logo {
     display: block;
     text-align: center;
 }
 
-.login-input-right {
+.member-logo__link {
+    position: relative;
+    display: block;
+    max-width: 246px;
+    margin: 0 auto;
+    background-image: url(/images/login_logo_color.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 56px;
+}
+
+.memeber-logo__img-fixer {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.member-input {
     display: block;
     box-sizing: border-box;
     width: calc(100% - 45px);
     height: 50px;
-    border: 1px solid #ccc;
-    border-left: 0;
+    border: 0;
+    border-left: 1px solid #ccc;
     padding: 14px;
 }
 
-.login-input-left {
+.member-sprite {
     position: relative;
     background-color: #fafafa;
-    border: 1px solid #ccc;
     box-sizing: border-box;
     min-width: 45px;
     height: 50px;
@@ -60,43 +78,21 @@ body {
     float: left;
 }
 
-.login-letter-logo {
+.member-sprite__logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.login-link {
+.member-login__link {
     margin-top: 22px;
 }
 
-.login-button > a, .join-button > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #777;
-    border-radius: 2px;
-    box-shadow: 0 1px 0 #555;
-    background-color: #97AABD;
-    text-align: center;
-    line-height: 66px;
-    font-size: 18px;
-    color: #D4E0ED;
-    text-decoration: none;
-    font-weight: 700;
-    margin-bottom: 22px;
+.member__expand-field {
+    color: #E52528;
 }
 
 .auto-login {
     float: right;
 }
-
-/* img {
-    position: absolute;
-    width: 246px;
-    height: 56px;
-    left: calc(50% - 246px/2);
-    top: calc(50% - 56px/2 - 248px);
-    min-width: 100px;
-} */
