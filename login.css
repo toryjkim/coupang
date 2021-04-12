@@ -1,21 +1,21 @@
 body {
-    margin: 0;
+    margin: 0
 }
 
 .member-main {
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 .member-wrapper {
     min-width: 290px;
-    max-width: 574px;
+    max-width: 576px;
     margin: 236px auto;
     padding: 0 4.35%
 }
 
 @media screen and (max-width: 500px){
     .member-wrapper {
-        margin: auto;
+        margin: auto
     }
 }
 
@@ -23,21 +23,20 @@ body {
     display: block;
     width: 100%;
     margin-top: 20px;
-    border: 1px solid #ccc;
-    /* border: 1px solid black; */
+    border: 1px solid #ccc
 }
 
 .member__input-wrap--error {
-    border-color: #E52528;
+    border-color: #E52528
 }
 
 .member-header {
-    margin: auto;
+    margin: auto
 }
 
 .member-logo {
     display: block;
-    text-align: center;
+    text-align: center
 }
 
 .member-logo__link {
@@ -48,14 +47,14 @@ body {
     background-image: url(/images/login_logo_color.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 56px;
+    padding-top: 56px
 }
 
 .memeber-logo__img-fixer {
     display: block;
     position: absolute;
     top:0;
-    left:0;
+    left:0
 }
 .member-input {
     display: block;
@@ -64,7 +63,7 @@ body {
     height: 50px;
     border: 0;
     border-left: 1px solid #ccc;
-    padding: 14px;
+    padding: 14px
 }
 
 .member-sprite {
@@ -75,24 +74,89 @@ body {
     height: 50px;
     text-align: center;
     margin: 0;
-    float: left;
+    float: left
 }
 
 .member-sprite__logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .member-login__link {
-    margin-top: 22px;
+    margin-top: 22px
 }
 
-.member__expand-field {
-    color: #E52528;
+.member__message-area {
+    display: none;
+    margin: 12px 10px 0px
 }
 
-.auto-login {
+.member__message-area--error {
+    display: block;
+    color: #E52528
+
+}
+
+.member__login-find {
     float: right;
+    line-height: 24px;
+}
+
+/* contents--util (checkbox, find accounts) */
+.login__content--util {
+    margin-top: 22px
+}
+
+.member__checkbox-wrap {
+    display: inline-block
+}
+
+.member__checkbox {
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+    float: left
+}
+
+.member__checkbox__label {
+    line-height: 24px;
+    float: left;
+    margin-left: 6px
+
+}
+
+/* contents--trigger */
+.login_content--trigger {
+    margin-top: 42px;
+}
+.memeber__login-button {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.45));
+    border: 0;
+    line-height: 25px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    background: #97AABD;
+    color: #D4E0ED
+}
+
+.member__login-button--join {
+    text-align: center;
+    background: #FFFFFF;
+    color: #0074E9
+}
+
+/* footer */
+.member-footer {
+    padding-top: 40px;
+}
+.member-footer > div:first-child {
+    text-align: center;
 }
